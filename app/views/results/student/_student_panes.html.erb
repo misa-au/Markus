@@ -35,13 +35,15 @@
     <div id="remark_request" class="tabbedArea">    
 
       <h3><%= I18n.t("marker.remark_instructions") %></h3>
-        
+       
       <%= assignment.remark_message %>
       
       <h3><%= I18n.t("marker.remark_request") %></h3>
       
       <% if @current_user.student? %> 
         <%= render :partial => 'results/student/remark_request', :locals => {:submission => submission, :assignment => assignment} %>       
+      <% else %>
+        <%= render :partial => 'results/marker/remark_request', :locals => {:submission => submission, :assignment => assignment} %>       
       <% end %>         
     </div> <!-- Annotations Summary -->
   </div> <!-- Code Pane -->
