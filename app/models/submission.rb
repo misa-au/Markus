@@ -98,6 +98,13 @@ class Submission < ActiveRecord::Base
     FileUtils.mv(source_file, dest_file, :force => true)
   end
   
+   # Create a remark result (from new remark request)
+  def create_remark_result
+    remark_result = Result.new
+    self.remark_result = remark_result
+    remark_result.marking_state = Result::MARKING_STATES[:unmarked]
+    remark_result.save
+  end
   
   # Query functions -------------------------------------------------------  
   # Figure out which assignment this submission is for
