@@ -2,7 +2,7 @@
   <div id="remark_request_text">
     <%= submission.remark_request %>
   </div>
-  <% if !submission.remark_result.released_to_students %>
+  <% if !submission.remark_result or !submission.remark_result.released_to_students %>
     <div id="overall_comments_edit">
       <h3><%= I18n.t("marker.overall_comments") %></h3>
       This will be editable if remark result is not released to students.

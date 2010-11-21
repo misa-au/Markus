@@ -46,9 +46,11 @@
       
       <h3><%= I18n.t("marker.remark_request") %></h3>
       
-      <%= render :partial => 'results/marker/remark_request', :locals => {:submission => submission, :assignment => assignment} %>       
-        
-    </div> <!-- Annotations Summary -->
+      <% if submission.remark_result %>
+        <%= render :partial => 'results/marker/remark_request', :locals => {:submission => submission, :assignment => assignment} %>       
+      <% end %>
+            
+    </div> <!-- Remark Request -->
   </div> <!-- Code Pane -->
   
   <!-- Divider  -->
