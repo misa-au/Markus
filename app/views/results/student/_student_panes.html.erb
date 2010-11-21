@@ -4,8 +4,7 @@
        <li class="tab"><a href="#code_holder"><%= I18n.t("marker.source_code") %></a></li>
        <li class="tab"><a href="#annotations_summary"><%= I18n.t("marker.annot_summary") %></a></li>
        <% if assignment.allow_remarks %>
-         <% if !@current_user.student? and !submission.remark_result%>
-         <% else %>
+         <% if @current_user.student? or submission.remark_result %>
            <li class="tab"><a href="#remark_request"><%= I18n.t("marker.remark_request") %></a></li>
          <% end %>  
        <% end %>

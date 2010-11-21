@@ -3,6 +3,11 @@
     <ul id="code_and_annotations_tabs" class="subsection_tabs">
        <li class="tab"><a href="#code_holder"><%= I18n.t("marker.source_code") %></a></li>
        <li class="tab"><a href="#annotations_summary"><%= I18n.t("marker.annot_summary") %></a></li>
+       <% if assignment.allow_remarks %>
+         <% if submission.remark_result %>
+           <li class="tab"><a href="#remark_request"><%= I18n.t("marker.remark_request") %></a></li>
+         <% end %>  
+       <% end %>
     </ul>  
     <div id="code_holder" class="tabbedArea">
       <div id="annotation_menu">
@@ -31,6 +36,18 @@
       </ul>
       
 
+    </div> <!-- Annotations Summary -->
+  
+    <div id="remark_request" class="tabbedArea">    
+
+      <h3><%= I18n.t("marker.remark_instructions") %></h3>
+       
+      <%= assignment.remark_message %>
+      
+      <h3><%= I18n.t("marker.remark_request") %></h3>
+      
+      <%= render :partial => 'results/marker/remark_request', :locals => {:submission => submission, :assignment => assignment} %>       
+        
     </div> <!-- Annotations Summary -->
   </div> <!-- Code Pane -->
   

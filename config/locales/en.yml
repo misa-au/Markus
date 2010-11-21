@@ -218,7 +218,7 @@ en:
       remark_request: "Remark Request"
       remark_instructions: "Instructions for Remark Requests"
       about_remark_save: "Please note that the instructor will be unaware of your saved request unless it has been submitted."
-      about_remark_submission: "Please note that once a remark request has been submitted, you will not be able to edit the request.  In order to change your request, you must cancel your existing request and start over."
+      about_remark_submission: "Please note that once a remark request has been submitted, you will not be able to edit the request.  In order to change your request, you must cancel your existing request and create a new one."
       previous_submission:  "Previous Submission"
       next_submission:      "Next Submission"
       marking_status:       "Marking Status:"
