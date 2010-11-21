@@ -1,6 +1,15 @@
 <div id="remark_request">
-  <div id="remark_request_edit">
-    <p><i><%= I18n.t("marker.about_remark_save") %></i></p>
-    <p><i><%= I18n.t("marker.about_remark_submission") %></p>
-  </div>
+  <% if !submission.remark_result or submission.remark_result.marking_state == 'unmarked' %>
+    <div id="remark_request_edit">
+      Note to review board: once the student submits request, the marking state of the remark result will be 'partial.'
+      <p><i><%= I18n.t("marker.about_remark_save") %></i></p>
+      <p><i><%= I18n.t("marker.about_remark_submission") %>
+            <%= I18n.t("marker.cancel_remark_to_change") %></i></p>
+    </div>
+  <% else %>
+    <div id="remark_request_show">
+      <p><i><%= I18n.t("marker.remark_submitted") %>
+            <%= I18n.t("marker.cancel_remark_to_change") %></i></p>
+    </div>  
+  <% end %>
 </div>
