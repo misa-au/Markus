@@ -36,7 +36,7 @@ GEM
       mongrel (>= 1.0.2)
     mysql (2.8.1)
     pg (0.10.1)
-    rack (1.1.0)
+    rack (1.1.6)
     rails (2.3.10)
       actionmailer (= 2.3.10)
       actionpack (= 2.3.10)
