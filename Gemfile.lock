@@ -44,7 +44,7 @@ GEM
       activeresource (= 2.3.10)
       activesupport (= 2.3.10)
       rake (>= 0.8.3)
-    rake (0.8.7)
+    rake (13.0.1)
     routing-filter (0.2.2)
       actionpack
     ruby-debug (0.10.4)
