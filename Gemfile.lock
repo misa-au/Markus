@@ -35,7 +35,7 @@ GEM
       gem_plugin (>= 0.2.3)
       mongrel (>= 1.0.2)
     mysql (2.8.1)
-    pg (0.10.1)
+    pg (1.2.3)
     rack (1.1.0)
     rails (2.3.10)
       actionmailer (= 2.3.10)
