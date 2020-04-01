@@ -1,16 +1,16 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    actionmailer (2.3.10)
-      actionpack (= 2.3.10)
-    actionpack (2.3.10)
-      activesupport (= 2.3.10)
+    actionmailer (2.3.11)
+      actionpack (= 2.3.11)
+    actionpack (2.3.11)
+      activesupport (= 2.3.11)
       rack (~> 1.1.0)
-    activerecord (2.3.10)
-      activesupport (= 2.3.10)
-    activeresource (2.3.10)
-      activesupport (= 2.3.10)
-    activesupport (2.3.10)
+    activerecord (2.3.11)
+      activesupport (= 2.3.11)
+    activeresource (2.3.11)
+      activesupport (= 2.3.11)
+    activesupport (2.3.11)
     cgi_multipart_eof_fix (2.5.0)
     columnize (0.3.2)
     daemons (1.1.0)
@@ -36,15 +36,15 @@ GEM
       mongrel (>= 1.0.2)
     mysql (2.8.1)
     pg (0.10.1)
-    rack (1.1.0)
-    rails (2.3.10)
-      actionmailer (= 2.3.10)
-      actionpack (= 2.3.10)
-      activerecord (= 2.3.10)
-      activeresource (= 2.3.10)
-      activesupport (= 2.3.10)
+    rack (1.1.6)
+    rails (2.3.11)
+      actionmailer (= 2.3.11)
+      actionpack (= 2.3.11)
+      activerecord (= 2.3.11)
+      activeresource (= 2.3.11)
+      activesupport (= 2.3.11)
       rake (>= 0.8.3)
-    rake (0.8.7)
+    rake (13.0.1)
     routing-filter (0.2.2)
       actionpack
     ruby-debug (0.10.4)
@@ -76,7 +76,7 @@ DEPENDENCIES
   mongrel_cluster
   mysql
   pg
-  rails (= 2.3.10)
+  rails (= 2.3.11)
   routing-filter
   ruby-debug
   rubyzip
