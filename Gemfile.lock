@@ -15,7 +15,7 @@ GEM
     columnize (0.3.2)
     daemons (1.1.0)
     db_populate (0.2.6)
-    factory_data_preloader (0.5.2)
+    factory_data_preloader (1.0.3)
     faker (0.9.4)
       i18n (~> 0.4)
     fastercsv (1.5.4)
